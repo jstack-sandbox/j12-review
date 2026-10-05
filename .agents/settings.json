@@ -24,6 +24,7 @@
   "merge_queue": {
     "app": "mergify"
   },
+  "merged_dark_check": "03 merged-dark",
   "required_checks": {
     "jstack/risk": {
       "producer": {
@@ -50,6 +51,12 @@
       "producer": {
         "workflow": ".github/workflows/ci.yml",
         "job": "tests"
+      }
+    },
+    "03 merged-dark": {
+      "producer": {
+        "workflow": ".github/workflows/ci.yml",
+        "job": "merged-dark"
       }
     }
   },

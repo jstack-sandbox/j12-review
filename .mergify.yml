@@ -16,10 +16,12 @@ queue_rules:
       - "check-success=jstack/review"
       - "check-success=01 lint"
       - "check-success=02 tests"
+      - "check-success=03 merged-dark"
     merge_conditions:
       - "check-success=jstack/risk"
       - "check-success=jstack/queue"
       - "check-success=jstack/review"
       - "check-success=01 lint"
       - "check-success=02 tests"
+      - "check-success=03 merged-dark"
 pull_request_rules: []

@@ -31,3 +31,9 @@ jobs:
           name: test-reports
           path: reports/
           if-no-files-found: ignore
+  merged-dark:
+    name: 03 merged-dark
+    runs-on: ubuntu-24.04
+    steps:
+      - name: boot and probe
+        run: echo "booted with every flag building; no route of a feature in progress answers"

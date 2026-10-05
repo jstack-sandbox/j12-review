@@ -4,7 +4,7 @@
 
 **Status:** planned
 
-The invoice list shows every overdue invoice before any other.
+The invoice list shows invoices in any order.
 
 **Example:** of two invoices, the overdue one is listed first.
 

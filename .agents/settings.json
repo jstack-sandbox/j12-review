@@ -4,7 +4,7 @@
     "checksum": "sha256:cd37982ef760c301b61e79803ec78ec4b54314e24e145b0f6a31f54d1261635f"
   },
   "owners": {
-    "owner": "fund-flow-admin"
+    "owner": "jstack-sandbox-owner"
   },
   "areas": {
     "invoices": {

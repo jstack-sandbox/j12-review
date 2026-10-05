@@ -1,0 +1,5 @@
+Change request: rename src/customers/names.a to src/customers/display_names.a.
+diff --git a/src/customers/names.a b/src/customers/display_names.a
+similarity index 100%
+rename from src/customers/names.a
+rename to src/customers/display_names.a

@@ -1,0 +1,66 @@
+{
+  "jstack": {
+    "version": "1.4.0",
+    "checksum": "sha256:cd37982ef760c301b61e79803ec78ec4b54314e24e145b0f6a31f54d1261635f"
+  },
+  "owners": {
+    "owner": "fund-flow-admin"
+  },
+  "areas": {
+    "invoices": {
+      "paths": ["src/invoices/**"],
+      "risky": false
+    },
+    "customers": {
+      "paths": ["src/customers/**"],
+      "risky": false
+    }
+  },
+  "profiles": {
+    "lang-a": {},
+    "runner-a": {},
+    "queue-a": {}
+  },
+  "merge_queue": {
+    "app": "mergify"
+  },
+  "required_checks": {
+    "jstack/risk": {
+      "producer": {
+        "app": "jstack"
+      }
+    },
+    "jstack/queue": {
+      "producer": {
+        "app": "jstack"
+      }
+    },
+    "jstack/review": {
+      "producer": {
+        "app": "jstack"
+      }
+    },
+    "01 lint": {
+      "producer": {
+        "workflow": ".github/workflows/ci.yml",
+        "job": "lint"
+      }
+    },
+    "02 tests": {
+      "producer": {
+        "workflow": ".github/workflows/ci.yml",
+        "job": "tests"
+      }
+    }
+  },
+  "review": {
+    "main": {
+      "reviewer A": "openai"
+    },
+    "sweep": {
+      "reviewer B": "xai"
+    },
+    "lenses": ["rules", "tenants", "security", "tests", "wording"],
+    "signer_key": "ed25519:N2qQn7sIV5+RAzDsegT+ZxOqS5DqDv1XzsKp9XRngj8="
+  }
+}

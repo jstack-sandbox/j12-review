@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": "beyond-request",
+      "owner": "reviewer",
+      "blocking": true,
+      "must_flag": "tests/planted/review/beyond-request.flag.diff",
+      "must_allow": "tests/planted/review/beyond-request.allow.diff"
+    },
+    {
+      "id": "test-cannot-fail",
+      "owner": "reviewer",
+      "blocking": true,
+      "must_flag": "tests/planted/review/test-cannot-fail.flag.diff",
+      "must_allow": "tests/planted/review/test-cannot-fail.allow.diff"
+    }
+  ]
+}

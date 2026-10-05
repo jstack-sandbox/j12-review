@@ -1,0 +1,25 @@
+commands_restrictions:
+  queue:
+    conditions:
+      - or:
+          - sender-permission >= write
+          - sender = sandbox-builder[bot]
+queue_rules:
+  - name: default
+    batch_size: 1
+    allow_inplace_checks: false
+    max_checks_retries: 1
+    merge_method: merge
+    queue_conditions:
+      - "check-success=jstack/risk"
+      - "check-success=jstack/queue"
+      - "check-success=jstack/review"
+      - "check-success=01 lint"
+      - "check-success=02 tests"
+    merge_conditions:
+      - "check-success=jstack/risk"
+      - "check-success=jstack/queue"
+      - "check-success=jstack/review"
+      - "check-success=01 lint"
+      - "check-success=02 tests"
+pull_request_rules: []

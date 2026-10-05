@@ -1,0 +1,11 @@
+Change request: add a due date to each invoice.
+diff --git a/src/invoices/due.a b/src/invoices/due.a
+new file mode 100644
+--- /dev/null
++++ b/src/invoices/due.a
+@@ -0,0 +1 @@
++due(invoice) = invoice.issued + 30
+diff --git a/src/customers/names.a b/src/customers/display_names.a
+similarity index 100%
+rename from src/customers/names.a
+rename to src/customers/display_names.a

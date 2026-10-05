@@ -60,7 +60,7 @@
     "sweep": {
       "reviewer B": "xai"
     },
-    "lenses": ["rules", "tenants", "security", "tests", "wording"],
-    "signer_key": "ed25519:N2qQn7sIV5+RAzDsegT+ZxOqS5DqDv1XzsKp9XRngj8="
+    "lenses": ["rules", "security", "tests", "wording"],
+    "signer_key": "ed25519:lwmTwtIbsYom2KwTpkkPa5GFrgn7vtJMDcN0x39AHfc="
   }
 }

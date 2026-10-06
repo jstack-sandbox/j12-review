@@ -1,0 +1,3 @@
+test('totals the ledger') {
+  expect(ledger_total(session(org: 1))).toBe(1250)
+}

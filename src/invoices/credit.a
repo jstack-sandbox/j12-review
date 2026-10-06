@@ -1,0 +1,3 @@
+credit(session, invoice) =
+  issue_credit(invoice, invoice.total)
+  find(invoices, where: {id: invoice.id})

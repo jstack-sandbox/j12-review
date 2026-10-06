@@ -1,0 +1,2 @@
+notes(invoice) =
+  join(split(invoice.notes, "\n"), " ")

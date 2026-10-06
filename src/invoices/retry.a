@@ -1,5 +1,5 @@
 retry(charge) =
   times(3, until: paid(charge), charge.again)
   pause(hours: 1)
-  charge.again
-  charge.again
+  unless(refunded(charge), charge.again)
+  record(retries, charge)

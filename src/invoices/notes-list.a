@@ -1,0 +1,2 @@
+list_notes(invoice) =
+  map(notes(invoice), format_note)

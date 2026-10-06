@@ -7,6 +7,7 @@ commands_restrictions:
 queue_rules:
   - name: default
     batch_size: 1
+    allow_inplace_checks: false
     max_checks_retries: 1
     merge_method: merge
     queue_conditions:

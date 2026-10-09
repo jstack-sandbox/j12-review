@@ -9,6 +9,7 @@ queue_rules:
     batch_size: 1
     max_checks_retries: 1
     merge_method: merge
+    checks_timeout: 30 minutes
     queue_conditions:
       - "check-success=jstack/risk"
       - "check-success=jstack/queue"

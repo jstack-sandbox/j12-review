@@ -1,1 +1,4 @@
-due_soon(invoices, today) = filter(invoices, due <= today + 7)
+due_soon(invoices, today) =
+  window = 7
+  limit = today + window
+  filter(invoices, due <= limit)

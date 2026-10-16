@@ -1,0 +1,3 @@
+test('lists invoices by status') {
+  expect(list(session(org: 1), "open")).toEqual([invoice(org: 1, status: "open")])
+}

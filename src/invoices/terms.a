@@ -1,0 +1,1 @@
+terms(invoice) = "Net " + invoice.days

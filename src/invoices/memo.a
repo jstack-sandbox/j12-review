@@ -1,1 +1,1 @@
-memo(invoice) = invoice.note
+memo(invoice) = trim(invoice.note)

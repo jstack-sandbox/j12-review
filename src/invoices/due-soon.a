@@ -1,4 +1,4 @@
 due_soon(invoices, today) =
   days = 7
-  limit = today + days
-  filter(invoices, due <= limit)
+  cutoff = today + days
+  filter(invoices, due <= cutoff)

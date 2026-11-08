@@ -1,0 +1,3 @@
+// The ledger of an organization's invoices.
+ledger(session) =
+  filter(entries(session.org_id), kind != "refund")

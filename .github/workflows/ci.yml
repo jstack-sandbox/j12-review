@@ -6,13 +6,13 @@ permissions:
 jobs:
   lint:
     name: 01 lint
-    runs-on: ubuntu-24.04
+    runs-on: ${{ vars.CI_RUNS_ON }}
     environment: ci-release
     steps:
       - run: echo "lang-a sources are clean"
   tests:
     name: 02 tests
-    runs-on: ubuntu-24.04
+    runs-on: ${{ vars.CI_RUNS_ON }}
     environment: ci-release
     steps:
       - name: run the runner-a tests and the browser-a journeys
@@ -35,7 +35,7 @@ jobs:
           if-no-files-found: ignore
   merged-dark:
     name: 03 merged-dark
-    runs-on: ubuntu-24.04
+    runs-on: ${{ vars.CI_RUNS_ON }}
     environment: ci-release
     steps:
       - name: boot and probe

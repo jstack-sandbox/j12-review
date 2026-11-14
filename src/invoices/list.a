@@ -1,4 +1,4 @@
 // Invoices, listed by status.
 import invoices
-list(session, status) =
-  find(invoices, where: {org_id: session.org_id, status: status})
+list(session, wanted) =
+  find(invoices, where: {org_id: session.org_id, status: wanted})

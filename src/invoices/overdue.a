@@ -1,0 +1,3 @@
+// Invoices, overdue ones last.
+overdue_last(invoices, today) =
+  sort(invoices, by: due < today)

@@ -1,0 +1,3 @@
+aging(invoices, today) =
+  days = today - due
+  group(invoices, by: [org_id, days])

@@ -1,0 +1,3 @@
+test('lists the notes') {
+  expect(list_notes(invoice(notes: "paid late"))).toEqual(["paid late"])
+}
